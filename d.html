@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0 auto;
+            max-width:500px;
+         
+
+        }
+
+        *{
+               box-sizing: border-box;
+               margin: 0;
+               padding: 0;
+        }
+
+        table{
+            border: 1px solid #777;
+            border-radius: 5px;
+            padding: .4em;
+            border-collapse:collapse;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(65, 58, 58, 0.475);
+         
+        }
+
+  
+
+       th,td{
+            border: 1px solid #777;
+            padding: 1em 2em;
+        }
+
+        th{
+            background-color: rgba(92, 92, 178, 0.665);
+            color: #fff;
+        }
+
+        tr:nth-child(even){
+            background-color: rgba(200, 200, 200, 0.475);
+        }
+
+      
+        
+        tr:not(th):hover{
+            background-color: rgba(65, 58, 58, 0.475);
+            cursor: pointer;
+            transition: .6s;
+        }
+
+        .opentext{
+            display: none;
+        }
+
+        p{
+            height: 0px;
+            transition: .1s;
+            background-color: rgba(119, 119, 119, 0.341);
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            visibility: collapse;
+         /*  display: none; */
+        }
+
+        .opentext:checked ~ p{
+            visibility: visible;
+         /*  display: block; */
+            height: auto;
+            padding: .3em .2em;
+        }
+
+        .form{
+            width: 100%;
+            z-index: 2;
+        }
+
+        label{
+            
+            background-color: rgba(122, 122, 166, 0.692);
+            width:100%;
+            display: block;
+            color: #fff;
+         
+            text-align: center;
+         
+            
+        }
+        label:hover{
+            cursor: pointer;
+        }
+   
+    </style>
+  </head>
+  <body>
+  
+          <table>
+         
+              <thead>
+
+                
+               
+                 
+         
+           
+                
+                <tr>
+                
+                   
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Surname</th> 
+               
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>11/11/2011</td>
+                    <td>Abdulla</td>
+                    <td>Gasanov</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>11/11/2011</td>
+                    <td>Abdulla</td>
+                    <td>Gasanov</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>11/11/2011</td>
+                    <td>Abdulla</td>
+                    <td>Gasanov</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>11/11/2011</td>
+                    <td>Abdulla</td>
+                    <td>Gasanov</td>
+                </tr>
+              </tbody>
+            </tr>
+          </table>
+
+          <br><br>
+
+              <label for="opentext">
+                     Open
+                       
+              </label>
+<input class="opentext" type="checkbox" name="optxt" id="opentext">
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nihil tenetur mollitia hic! Voluptatibus, voluptatem corrupti. Reprehenderit fugit illo recusandae.
+</p>
+
+        <!--   <div class="form">
+            <label for="opentext">
+                Open textblock
+            </label>
+            <input class="opentext" type="checkbox" name="optxt" id="opentext">
+            
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quod.
+                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quod.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quod.
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quod.
+            </p>
+          </div> -->
+
+     
+  </body>
+</html>
